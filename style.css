@@ -1,0 +1,373 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+
+font-family: 'Roboto', sans-serif;
+scroll-behavior: smooth;
+
+}
+
+header{
+    height:100vh;
+    width: 100%;
+}
+/* nav1 start */
+.nav1{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    box-shadow: 2px 0px 3px gray;
+
+}
+.nav1 .left{
+    flex-basis: 50%;
+    letter-spacing: 2px;
+}
+.nav1  .left  a{
+text-decoration: none;
+color: red;
+font-weight: bold;
+margin: 0px 5px;
+}
+.right{
+    flex-basis: 50%;
+}
+.right i{
+    font-size: 20px;
+    margin: 0px 15px;
+    background-color:rgb(122, 48, 48);
+    color:whitesmoke;
+    padding: 8px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+.nav1 .right i:hover{
+    transform: rotate(360deg);
+}
+
+/* nav1 end */
+
+/* nav2 start */
+.nav2{
+    width: 100%;
+    height: 120px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.nav2 .nav2-left, .nav2 .nav2-center,.nav2 .nav2-right{
+flex-basis: 30%;
+margin: auto;
+cursor: pointer;
+}
+
+.nav2 .nav2-left i{
+margin-left: 15px;
+}
+.nav2 .nav2-center h1{
+    color:rgb(139, 19, 195);
+    font-size: 2rem;
+    letter-spacing: 5px;
+    font-weight: bold;
+    
+}
+
+
+.nav2 .nav2-center h1 span{
+    color:rgba(0, 0, 0, 0.833);
+}
+
+.nav2 .nav2-center p{
+    color:rgb(122, 48, 48);
+    font-size: 15px;
+    
+    margin-top: 5px;
+    
+    
+}
+.nav2 .nav2-right i{
+    margin: 0px 5px;
+}
+/* nav3 */
+.nav3{
+    height: 70px;
+    width: 100%;
+    line-height: 70px;
+}
+ .nav3 ul{
+    list-style: none;
+    text-align: center;
+}
+.nav3 ul li {
+    display: inline-block;
+    width: 150px;
+    
+    
+}
+.nav3 ul li a{
+    display: block;
+    text-decoration: none;
+    color:black;
+    font-weight: 500;
+}
+.nav3 ul li a:hover{
+    color: rgb(0, 85, 255);
+}
+.nav3 ul li i{
+    color: rgb(255, 0, 60);
+    margin: 0px 5px;
+} 
+.nav3 ul ul{
+  top: 70px;  
+  position: absolute;
+  left: 0;
+  display: none;
+}
+
+.nav3 ul ul li{
+    background-color: aliceblue;
+    border-bottom: 1px solid black;
+}
+.nav3 ul li:hover>ul{
+    display:block ;
+}
+/* nav 3 end */
+.featured{
+    width: 100%;
+    height:60vh;
+    background:linear-gradient(to right ,rgba(0,0,0,1)20%,rgba(255,255,255,0.2)), url("images/shopbg");
+    background-size: cover;
+    background-position: top;
+    position: relative;
+}
+
+.featured-text{
+    max-width: 500px;
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    color: whitesmoke;
+    text-align: center;
+    padding: 10px;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+}
+.featured-text button{
+    padding:10px 20px ;
+    border: none;
+    outline: none;
+    background-color: rgb(103, 41, 150);
+    margin: 20px 0px;
+    color: whitesmoke;
+    padding:8px;
+    font-size: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    
+}
+.featured-text button:hover{
+    background-color: deeppink;
+    
+}
+/* letest start */
+.letest{
+    padding: 50px 100px;
+
+}
+.product-intro h1{
+    color:rgb(255, 0, 60);
+    letter-spacing: 0.2rem;
+    font-size: 2rem;
+    font-weight: bolder;
+    
+    
+    
+}
+
+.product-intro {
+    text-align: center;
+    
+    
+}
+
+.product-intro h1:hover{
+    color: black;
+}
+
+
+.product-intro h1 span{
+
+    color: rgb(6, 6, 25);
+    margin: 6px;
+}
+.product-intro h1 span:hover{
+    color:rgb(255, 0, 60);
+    
+}
+
+.product-intro p{
+    color: rgb(10, 13, 5);
+    margin: 15px 0px;
+
+    
+}
+.card-container{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem 0;
+    cursor: pointer;
+
+}
+.card-container .card{
+    flex-basis: 20%;
+    padding: 0.8rem;
+    position: relative;
+    transition: 1.5s ease-in-out;
+    /
+    
+}
+
+
+.card-container .card:hover{
+    transform: scale(1.1);
+}
+
+.card img{
+width: 100%;
+}
+.card i{
+    color: goldenrod;
+    margin: 10px 0px;
+}
+
+
+
+
+
+.card button{
+    color: rgb(4, 13, 24);
+    background-color: indianred;
+    border: none;
+    outline:none;
+    margin-top: 15px;
+    padding: 5px 20px;
+    font-weight: bold;
+    
+
+}
+
+
+.card button:hover{
+background-color: aqua;
+}
+
+
+.card:hover img,.card:hover h1{
+    width: 80%;
+    color:lightseagreen ;
+}
+
+.card::before{
+    content:'25% OFF';
+    width: 25%;
+    height: 25px;
+    line-height: 25px;
+    color:black;
+    position:absolute;
+    margin-bottom: 70px;
+    left:0;
+    top: 0;
+    background-color: limegreen;
+    padding: 0px 4px;
+    transform: rotate(-20deg);
+
+}
+
+/* letest end */
+/* trends */
+.trends{
+    padding: 50px 100px;
+    background-color: rgba(0,0,0,0.01);
+}
+
+.trends .swiper {
+    width: 100%;
+    padding: 50px;
+    
+  
+
+  }
+
+.trends .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+    
+  }
+
+  .trends .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+ 
+/* trends end */
+/* footer start */
+
+footer {
+    background-color: rgb(46, 43, 43);
+    color: whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+    padding: 2rem;
+    
+
+}
+/* footer div{
+    flex-basis:30%;
+    
+} */
+
+footer h1{
+    letter-spacing: 0.4rem;
+}
+footer h1 span{
+    color: rgb(0, 255, 38);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+footer p{
+    font-size: 1rem;
+}
+footer i{
+    margin: 0px 5px;
+}
+/* footer end */
+/* using media query */
+  @media screen and (max-width:915px){
+    .nav3 ul li{ 
+        background-color: palevioletred;
+        
+        flex-wrap: wrap;
+    }
+    
+  }
